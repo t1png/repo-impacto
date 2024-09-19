@@ -38,7 +38,11 @@ ul {
     border-width:2px;
     border-style:solid;
     border-color:white;
-    width:auto;
+    width:auto; 
+}
+a:hover{
+    color: #884608;
+    font-size: 1.5rem;
 }
 .h3-serv {
     font-size: 25px;
@@ -67,8 +71,8 @@ h2 {
     text-decoration: underline;
 }
 .img-index {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
 }
 .video-index {
     width: 100%;
@@ -96,11 +100,27 @@ div {
     width: 60px;
     height: 60px;
 }
-.boton-user {
+.profile {
+    position: relative;
     display: flex;
-    justify-content: right;
-    margin: 2%;
-}
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+  }
+  
+  .username {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px; /* adjust the font size as needed */
+  }
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -149,3 +169,28 @@ img.wide-image {
         }
     
     }
+@media (max-width:768px) {
+    ul {
+        flex-direction: column;
+    }
+    div {
+        flex-direction: column;
+    }
+    .grid-item {
+        width: 60%;
+        height: 60%;
+    }
+    .div-contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0%;
+        justify-content: center;
+    }
+    h3, h4, p {
+        font-size: 90%;
+    }
+    .img-index {
+        width: 80%;
+        height: 80%;
+    }
+}
