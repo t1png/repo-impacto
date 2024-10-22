@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.title {
+    color: $colorimpacto;
+    margin-top: 4%;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style:ExtraBold;
+    font-size: 70px;
+    text-decoration: underline;
+    text-decoration-color: $colorsub;
+} 
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $colorfondo;
+}
