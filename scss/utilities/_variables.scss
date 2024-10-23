@@ -1,4 +1,17 @@
 $colorimpacto: #DA6A00;
+
 $colorsub: #49700d;
+
 $colorfondo: #FFFFE8;
+
 $colornav: #68904D;
+
+%flexbox{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin size  ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
